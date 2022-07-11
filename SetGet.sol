@@ -2,6 +2,7 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract SetGet {
+    string message;
     
 
 //set method stores a value in blockchain...
