@@ -4,9 +4,9 @@ pragma solidity >=0.7.0 <0.9.0;
 
 
 /**
-basic hello world progam..
+basic hello world program..
 
- */
+ */ 
 
 contract HelloWorld {
 
