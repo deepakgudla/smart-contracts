@@ -11,7 +11,7 @@ basic hello world program..
 contract HelloWorld {
 
 
-    function print() public view returns(string memory) {
+    function abcd() public view returns(string memory) {
         return "hello world";
     }
 }
