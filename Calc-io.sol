@@ -46,3 +46,5 @@ function compute(uint _a, uint _b, uint _c, uint _z) public view returns (uint) 
 }
 
 }
+
+// need to add require conditions.... and modify the code...
