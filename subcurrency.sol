@@ -29,7 +29,6 @@ contract Coin {
         require(msg.sender == minter);
         balances[receiver] += amount;
         //balances[sender] -= amount
-
     }
 
     error insufficientBalance(uint requested, uint available);
@@ -44,6 +43,4 @@ contract Coin {
         balances[receiver] += amount;
         emit Sent(msg.sender, receiver, amount);
     }
-
-
 }
