@@ -1,7 +1,6 @@
 //SPDX-License-Identifier: MIT
 pragma solidity >=0.7.0 <0.9.0;
 
-
 contract A{
     uint innerVal = 10;
 
@@ -18,6 +17,4 @@ contract B is A {
     function see() public view returns (uint) {
         return A.innerVal;
     }
-
 }
-
