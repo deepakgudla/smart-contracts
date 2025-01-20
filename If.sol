@@ -14,15 +14,4 @@ contract If {
     function spent(uint amount_spent) public view returns(uint) {
         return amount_spent;
     }
-
-}
-
-    
-
-    
-
-    
-
-
-    
-    
+}    
