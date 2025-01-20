@@ -20,10 +20,8 @@ because, the function will fail if too much gas is used....
 ---
 invoking send and transfer method results in 2300 gas which is enough to emit a log when
 "event is decalred" ?
-
-
-
 */
+
 contract backFall {
 
     event log(uint gas);
@@ -36,12 +34,10 @@ contract backFall {
     function getBalance() public view returns(uint) {
         return address(this).balance;
     }
-
 }
 
 /**
 new contract will send ether to fallback contract which will trigger fallback functions...
-
 */
 
 contract SendToFallback {
@@ -50,12 +46,10 @@ contract SendToFallback {
         //sending ether with the transfer method
         //will automatically transfer 2300 gas amount.....
         _to.transfer(msg.value);
-
     }
 
     function callFallback(address payable _to) public payable {
         (bool sent,) = _to.call{value: msg.value}('');
         require(sent, 'sending failed');
     }
-
 }
