@@ -15,6 +15,3 @@ function setMessage(string memory _newMessage) public {
         return message;
     }
 }
-
-    
-
