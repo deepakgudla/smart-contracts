@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: MIT
 pragma solidity >=0.7.0 <0.9.0;
 
-/**
+/*
 * fallback function are anonymous function..
 defining fallback functions:-
 * cannot have a name
@@ -36,7 +36,7 @@ contract backFall {
     }
 }
 
-/**
+/*
 new contract will send ether to fallback contract which will trigger fallback functions...
 */
 
