@@ -27,7 +27,6 @@ contract randomNumberGenerator {
     function rand(uint) external view returns(uint) { //add uint range n functon arguments to get the range of the hash....
         return uint(keccak256(abi.encodePacked(oracle.rand, block.timestamp, block.number, msg.sender))); // % range;
     }
-
 } 
 
 // first deploy the  oracle contract and copy the contract address....
